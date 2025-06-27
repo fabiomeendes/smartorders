@@ -1,13 +1,32 @@
-﻿namespace ProductCatalogService.Application.Services
+﻿using ProductCatalogService.Domain.Entities;
 
-  {
-    public class ProductService : 
+namespace ProductCatalogService.Application.Services
+{
+    public class ProductService : IProductService
     {
-        Task<IEnumerable<Product>> GetAllProductsAsync()
+        public Task<Product> CreateProductAsync(Product product)
         {
-            // Implementation for retrieving all products
             throw new NotImplementedException();
-   
+        }
+
+        public Task<bool> DeleteProductAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Product>> GetAllProductsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Product> GetProductByIdAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Product> UpdateProductAsync(string id, Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }
